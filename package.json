@@ -1,0 +1,75 @@
+{
+	"name": "@dnbhq/markdownlint-config",
+	"description": "Shared markdownlint configuration for DNBHQ projects.",
+	"version": "0.1.0",
+	"license": "MIT",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dnbhq/markdownlint-config.git"
+	},
+	"author": "Patrick Kollitsch <davidsneighbourdev+gh@gmail.com> (https://davids-neighbour.com)",
+	"bugs": "https://github.com/dnbhq/markdownlint-config/issues",
+	"homepage": "https://github.com/dnbhq/markdownlint-config#readme",
+	"dependencies": {
+		"@github/markdownlint-github": "0.8.0",
+		"markdownlint-rule-extended-ascii": "0.2.1",
+		"markdownlint-rule-list-duplicates": "0.0.1",
+		"markdownlint-rule-relative-links": "5.1.0",
+		"markdownlint-rule-search-replace": "1.2.0",
+		"markdownlint-rule-title-case-style": "0.4.3"
+	},
+	"devDependencies": {
+		"@release-it/conventional-changelog": "11.0.0",
+		"@types/node": "25.6.0",
+		"lint-staged": "16.4.0",
+		"markdownlint": "0.40.0",
+		"markdownlint-cli2": "0.22.0",
+		"release-it": "20.0.1",
+		"simple-git-hooks": "2.13.1",
+		"typescript": "6.0.3"
+	},
+	"peerDependencies": {
+		"markdownlint": ">=0.40.0",
+		"markdownlint-cli2": ">=0.22.0"
+	},
+	"scripts": {
+		"lint": "markdownlint-cli2 --config config.jsonc README.md",
+		"lint:staged": "lint-staged",
+		"prepare": "simple-git-hooks",
+		"release": "release-it",
+		"release:dry": "release-it --dry-run",
+		"test": "npm run lint"
+	},
+	"main": "config.jsonc",
+	"files": [
+		"config.jsonc",
+		".markdownlintignore",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"engines": {
+		"node": ">=25"
+	},
+	"exports": {
+		".": "./config.jsonc",
+		"./config": "./config.jsonc",
+		"./config.jsonc": "./config.jsonc",
+		"./ignore": "./.markdownlintignore",
+		"./.markdownlintignore": "./.markdownlintignore"
+	},
+	"lint-staged": {
+		"*.{md,mdx}": [
+			"markdownlint-cli2 --config config.jsonc --fix --no-globs"
+		]
+	},
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged --allow-empty"
+	},
+	"type": "module"
+}
