@@ -1,0 +1,117 @@
+{
+  "$schema": "https://github.com/DavidAnson/markdownlint/blob/main/schema/markdownlint-config-schema.json",
+  "$id": "https://raw.githubusercontent.com/dnbhq/markdownlint-config/refs/heads/main/config.jsonc",
+  "default": true,
+  "customRules": [
+    "@github/markdownlint-github",
+    "markdownlint-rule-relative-links",
+    "markdownlint-rule-search-replace",
+    "markdownlint-rule-extended-ascii",
+    "markdownlint-rule-title-case-style",
+    "markdownlint-rule-list-duplicates"
+  ],
+  "MD001": {
+    "severity": "error",
+    "front_matter_title": "^\\s*title\\s*[:=]"
+  },
+  "MD003": {
+    "style": "atx"
+  },
+  "MD004": {
+    "style": "asterisk"
+  },
+  "MD005": true,
+  "MD007": {
+    "indent": 2
+  },
+  "MD013": false,
+  "MD020": false,
+  "MD021": false,
+  "MD024": {
+    "siblings_only": true,
+    "allow_different_nesting": true
+  },
+  "MD033": {
+    "allowed_elements": [
+      "lite-youtube",
+      "color-grid",
+      "date-diff",
+      "kbd"
+    ],
+    "table_allowed_elements": [
+      "kbd"
+    ]
+  },
+  "MD035": {
+    "style": "---"
+  },
+  "MD043": false,
+  "MD044": false,
+  "MD046": {
+    "style": "fenced"
+  },
+  "MD048": {
+    "style": "backtick"
+  },
+  "MD049": {
+    "style": "asterisk"
+  },
+  "MD050": {
+    "style": "asterisk"
+  },
+  "MD054": {
+    "autolink": false
+  },
+  "MD055": {
+    "style": "leading_and_trailing"
+  },
+  "MD059": {
+    "prohibited_texts": [
+      "click here",
+      "here",
+      "link",
+      "more"
+    ]
+  },
+  "MD060": {
+    "style": "compact"
+  },
+  "GH001": true,
+  "GH002": {
+    "additional_banned_texts": [
+      "Something",
+      "Click here"
+    ]
+  },
+  "GH003": true,
+  "relative-links": {
+    "root_path": "."
+  },
+  "search-replace": {
+    "rules": [
+      {
+        "name": "ellipsis",
+        "message": "Do not use three dots '...' for ellipsis.",
+        "information": "https://example.com/rules/ellipsis",
+        "search": "...",
+        "replace": "…",
+        "searchScope": "text"
+      },
+      {
+        "name": "curly-double-quotes",
+        "message": "Do not use curly double quotes.",
+        "searchPattern": "/“|”/g",
+        "replace": "\""
+      }
+    ]
+  },
+  "extended-ascii": {
+    "ascii-only": true
+  },
+  "title-case-style": {
+    "case": "sentence",
+    "ignore": [
+      "JavaScript"
+    ]
+  }
+}
