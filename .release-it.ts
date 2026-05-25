@@ -1,7 +1,32 @@
-/** markdownlint-disable MD013 */
+import { readFileSync } from "node:fs";
 import type { Config } from "release-it";
 
-const repositoryUrl = "https://github.com/dnbhq/markdownlint-config";
+interface PackageMetadata {
+  repository?: string | {
+    type?: string;
+    url?: string;
+  };
+}
+
+function normaliseRepositoryUrl(repository: PackageMetadata["repository"]): string {
+  const value = typeof repository === "string" ? repository : repository?.url;
+
+  if (typeof value !== "string" || value.length === 0) {
+    throw new Error("package.json must define a repository URL.");
+  }
+
+  return value
+    .replace(/^git\+/, "")
+    .replace(/^git@github\.com:/, "https://github.com/")
+    .replace(/^ssh:\/\/git@github\.com\//, "https://github.com/")
+    .replace(/\.git$/, "");
+}
+
+const packageJson = JSON.parse(
+  readFileSync(new URL("./package.json", import.meta.url), "utf8"),
+) as PackageMetadata;
+
+const repositoryUrl = normaliseRepositoryUrl(packageJson.repository);
 
 const config = {
   npm: {
