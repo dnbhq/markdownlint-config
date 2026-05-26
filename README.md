@@ -140,7 +140,7 @@ For example, a project with a different documentation root can override the rela
 ```jsonc
 {
   "config": {
-    "extends": "node_modules/@dnbhq/markdownlint-config/config.jsonc",
+    "extends": "./node_modules/@dnbhq/markdownlint-config/config.jsonc",
     "relative-links": {
       "root_path": "../.."
     }
