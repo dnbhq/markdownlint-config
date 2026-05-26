@@ -4,7 +4,7 @@
   "customRules": [
     "./rules/markdownlint-github.cjs",
     "./rules/relative-links.cjs",
-    "./rules/search-replace.cjs",
+    "./rules/search.cjs",
     "./rules/extended-ascii.cjs",
     "./rules/title-case-style.cjs",
     "./rules/list-duplicates.cjs"
