@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.1](https://github.com/dnbhq/markdownlint-config/compare/v0.2.0...v0.2.1) (2026-05-26)
+
+### Bug Fixes
+
+* move rules into proper place ([f8b149f](https://github.com/dnbhq/markdownlint-config/commit/f8b149f09232adb36d2d3c41cb80f2bb1786617d))
+
+### Build
+
+* **deps:** update dependencies ([350d371](https://github.com/dnbhq/markdownlint-config/commit/350d371cb6069c44f677c056a1013ddbe029e0e7))
+
 ## 0.2.0 (2026-05-26)
 
 ### Features
