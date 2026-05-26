@@ -13,8 +13,8 @@
   "homepage": "https://github.com/dnbhq/markdownlint-config#readme",
   "dependencies": {
     "@github/markdownlint-github": "0.8.0",
-    "markdownlint": ">=0.40.0",
-    "markdownlint-cli2": ">=0.22.1",
+    "markdownlint": "0.40.0",
+    "markdownlint-cli2": "0.22.1",
     "markdownlint-rule-extended-ascii": "0.2.1",
     "markdownlint-rule-list-duplicates": "0.0.1",
     "markdownlint-rule-relative-links": "5.1.0",
@@ -30,10 +30,6 @@
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3"
   },
-  "peerDependencies": {
-    "markdownlint": ">=0.40.0",
-    "markdownlint-cli2": ">=0.22.0"
-  },
   "scripts": {
     "lint": "markdownlint-cli2 --config config.jsonc README.md",
     "lint:staged": "lint-staged",
@@ -45,6 +41,8 @@
   "main": "config.jsonc",
   "files": [
     "config.jsonc",
+    "rules.jsonc",
+    "rules/*.cjs",
     ".markdownlintignore",
     "README.md",
     "CHANGELOG.md",
@@ -61,6 +59,8 @@
     ".": "./config.jsonc",
     "./config": "./config.jsonc",
     "./config.jsonc": "./config.jsonc",
+    "./rules": "./rules.jsonc",
+    "./rules.jsonc": "./rules.jsonc",
     "./ignore": "./.markdownlintignore",
     "./.markdownlintignore": "./.markdownlintignore"
   },
