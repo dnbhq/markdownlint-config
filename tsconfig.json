@@ -1,0 +1,6 @@
+{
+    "extends": "@dnbhq/tsconfig/strict",
+    "include": [
+        "**/*.ts"
+    ]
+}
