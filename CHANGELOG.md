@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.2.4](https://github.com/dnbhq/markdownlint-config/compare/v0.2.2...v0.2.4) (2026-05-31)
+
+### Bug Fixes
+
+* **config:** add custom rule loader ([db7ef99](https://github.com/dnbhq/markdownlint-config/commit/db7ef991d74f6bf26532e368cc69172fa72f684b))
+* **config:** add custom rule loaders ([cddf5f2](https://github.com/dnbhq/markdownlint-config/commit/cddf5f22c3fc11ca84b6b843229bfb45b9efc216))
+* **config:** add extended ascii rule loader ([1c0e3e4](https://github.com/dnbhq/markdownlint-config/commit/1c0e3e428bf73e53746ceaeb75dde93dd7292c69))
+* **config:** add list duplicates rule loader ([6dd13f2](https://github.com/dnbhq/markdownlint-config/commit/6dd13f233ca436365de9478a222ef8d64157ebd4))
+* **config:** add relative links rule loader ([ef05264](https://github.com/dnbhq/markdownlint-config/commit/ef05264b606592618fe75f4a2d93a08699472b44))
+* **config:** add title case rule loader ([71d1067](https://github.com/dnbhq/markdownlint-config/commit/71d106727cd150f841dcd7b52941fd13568b7021))
+* **config:** bump package version for cli2 config fix ([04f27b5](https://github.com/dnbhq/markdownlint-config/commit/04f27b521a8c905532e5246f8a51dc729aaea99c))
+* **config:** expose markdownlint rule configuration ([0545cc5](https://github.com/dnbhq/markdownlint-config/commit/0545cc5ffb849fad5c172a4f41358d9f6d4b251c))
+* **config:** expose markdownlint-cli2 configuration ([976231b](https://github.com/dnbhq/markdownlint-config/commit/976231b98a522a70b129f819164f6c455badf0a9))
+* **config:** publish rule configuration files ([ce39120](https://github.com/dnbhq/markdownlint-config/commit/ce39120e81ab71dec840c3c3c2b45f286a66673c))
+* **config:** reference available rule loader ([bb49dd1](https://github.com/dnbhq/markdownlint-config/commit/bb49dd1f80ca5a198aa43e4428a12bd1e8e8a38a))
+* move config back to initial state and fix README.md ([576f22b](https://github.com/dnbhq/markdownlint-config/commit/576f22b96aee9df81dd3f610a9d7b5c676ab7db8))
+
+### Documentation
+
+* **config:** clarify markdownlint-cli2 usage ([8c2c0d9](https://github.com/dnbhq/markdownlint-config/commit/8c2c0d90bbfb1de4a55288e5073b28d903bda37d))
+
 ## [0.2.2](https://github.com/dnbhq/markdownlint-config/compare/v0.2.1...v0.2.2) (2026-05-26)
 
 ### Build
