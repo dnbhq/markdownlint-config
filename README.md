@@ -33,39 +33,7 @@ Consuming projects do not need to install those packages separately.
 
 This package is designed for markdownlint-cli2, not the older markdownlint CLI.
 
-Create or update `.markdownlint-cli2.jsonc` in the consuming project:
-
-```jsonc
-{
-  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/v0.22.1/schema/markdownlint-cli2-config-schema.json",
-  "config": {
-    "extends": "./node_modules/@dnbhq/markdownlint-config/rules.jsonc"
-  },
-  "customRules": [
-    "./node_modules/@dnbhq/markdownlint-config/rules/markdownlint-github.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/relative-links.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/search.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/extended-ascii.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/title-case-style.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/list-duplicates.cjs"
-  ],
-  "ignores": [
-    "node_modules",
-    "CHANGELOG.md"
-  ],
-  "globs": [
-    "**/*.{md,mdx}"
-  ]
-}
-```
-
-Run markdownlint-cli2 with the project-local configuration:
-
-```bash
-npx markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md
-```
-
-Or use the shared CLI2 configuration directly:
+Run this configuration with the following call:
 
 ```bash
 npx markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc README.md
@@ -76,8 +44,8 @@ Add scripts to `package.json` in the consuming project:
 ```json
 {
   "scripts": {
-    "lint:markdown": "markdownlint-cli2 --config .markdownlint-cli2.jsonc \"**/*.{md,mdx}\"",
-    "lint:markdown:fix": "markdownlint-cli2 --config .markdownlint-cli2.jsonc --fix \"**/*.{md,mdx}\""
+    "lint:markdown": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc \"**/*.{md,mdx}\"",
+    "lint:markdown:fix": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc --fix \"**/*.{md,mdx}\""
   }
 }
 ```
@@ -165,6 +133,8 @@ This only standardises the marker style. It does not mean horizontal rules shoul
 `markdownlint-rule-title-case-style` requires sentence case for headings and ignores `JavaScript` as an allowed spelling.
 
 ## Project-local overrides
+
+TBD. not working currently ;)
 
 Projects can keep local decisions in their `.markdownlint-cli2.jsonc` file by extending `rules.jsonc` and adding overrides inside the local `config` object.
 
