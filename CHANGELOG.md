@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.7](https://github.com/dnbhq/markdownlint-config/compare/v0.2.6...v0.2.7) (2026-06-01)
+
+### Bug Fixes
+
+* rename configuration file ([5852df5](https://github.com/dnbhq/markdownlint-config/commit/5852df5d63ac3147cfc92cb5b0bcddc1f5624fe0))
+
 ## [0.2.6](https://github.com/dnbhq/markdownlint-config/compare/v0.2.5...v0.2.6) (2026-06-01)
 
 ### Bug Fixes
