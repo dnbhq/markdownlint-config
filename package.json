@@ -41,7 +41,6 @@
   "main": "config.jsonc",
   "files": [
     "config.jsonc",
-    "rules.jsonc",
     "rules/*.cjs",
     ".markdownlintignore",
     "README.md",
@@ -59,8 +58,6 @@
     ".": "./config.jsonc",
     "./config": "./config.jsonc",
     "./config.jsonc": "./config.jsonc",
-    "./rules": "./rules.jsonc",
-    "./rules.jsonc": "./rules.jsonc",
     "./ignore": "./.markdownlintignore",
     "./.markdownlintignore": "./.markdownlintignore"
   },

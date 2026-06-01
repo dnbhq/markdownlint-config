@@ -142,5 +142,8 @@
         "JavaScript"
       ]
     }
-  }
+  },
+  "ignores": [
+    "node_modules"
+  ]
 }

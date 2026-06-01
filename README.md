@@ -6,7 +6,6 @@ Shared markdownlint-cli2 configuration for DNBHQ projects.
 * [Usage](#usage)
 * [Available files](#available-files)
 * [Rule overview](#rule-overview)
-* [Project-local overrides](#project-local-overrides)
 * [Release](#release)
 * [Notes](#notes)
 
@@ -59,7 +58,6 @@ The package also ships `.markdownlintignore`. Copy it into a consuming project w
 The npm package publishes these files:
 
 * `config.jsonc` - the shared markdownlint-cli2 configuration.
-* `rules.jsonc` - the shared markdownlint rule configuration used by `config.jsonc` and by project-local overrides.
 * `rules/*.cjs` - custom rule loader wrappers used by markdownlint-cli2.
 * `.markdownlintignore` - the shared ignore baseline.
 * `README.md` - package documentation.
@@ -131,36 +129,6 @@ This only standardises the marker style. It does not mean horizontal rules shoul
 `markdownlint-rule-extended-ascii` enforces ASCII-only Markdown content.
 
 `markdownlint-rule-title-case-style` requires sentence case for headings and ignores `JavaScript` as an allowed spelling.
-
-## Project-local overrides
-
-TBD. not working currently ;)
-
-Projects can keep local decisions in their `.markdownlint-cli2.jsonc` file by extending `rules.jsonc` and adding overrides inside the local `config` object.
-
-For example, a project with a different documentation root can override the relative link root:
-
-```jsonc
-{
-  "$schema": "https://raw.githubusercontent.com/DavidAnson/markdownlint-cli2/v0.22.1/schema/markdownlint-cli2-config-schema.json",
-  "config": {
-    "extends": "./node_modules/@dnbhq/markdownlint-config/rules.jsonc",
-    "relative-links": {
-      "root_path": "../.."
-    }
-  },
-  "customRules": [
-    "./node_modules/@dnbhq/markdownlint-config/rules/markdownlint-github.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/relative-links.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/search.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/extended-ascii.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/title-case-style.cjs",
-    "./node_modules/@dnbhq/markdownlint-config/rules/list-duplicates.cjs"
-  ]
-}
-```
-
-Use project-local overrides for repository-specific paths, additional allowed HTML elements, or content-specific terminology.
 
 ## Release
 
