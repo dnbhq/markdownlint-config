@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.5](https://github.com/dnbhq/markdownlint-config/compare/v0.2.4...v0.2.5) (2026-06-01)
+
+### Bug Fixes
+
+* remove rules.jsonc ([9e50dab](https://github.com/dnbhq/markdownlint-config/commit/9e50dabca30eac611fee74998741fdd74e0c5134))
+
 ## [0.2.4](https://github.com/dnbhq/markdownlint-config/compare/v0.2.2...v0.2.4) (2026-05-31)
 
 ### Bug Fixes
