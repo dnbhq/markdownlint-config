@@ -35,7 +35,7 @@ This package is designed for markdownlint-cli2, not the older markdownlint CLI.
 Run this configuration with the following call:
 
 ```bash
-npx markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc README.md
+npx markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/.markdownlint-cli2.jsonc README.md
 ```
 
 Add scripts to `package.json` in the consuming project:
@@ -43,8 +43,8 @@ Add scripts to `package.json` in the consuming project:
 ```json
 {
   "scripts": {
-    "lint:markdown": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc \"**/*.{md,mdx}\"",
-    "lint:markdown:fix": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/config.jsonc --fix \"**/*.{md,mdx}\""
+    "lint:markdown": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/.markdownlint-cli2.jsonc \"**/*.{md,mdx}\"",
+    "lint:markdown:fix": "markdownlint-cli2 --config ./node_modules/@dnbhq/markdownlint-config/.markdownlint-cli2.jsonc --fix \"**/*.{md,mdx}\""
   }
 }
 ```
@@ -57,7 +57,7 @@ The package also ships `.markdownlintignore`. Copy it into a consuming project w
 
 The npm package publishes these files:
 
-* `config.jsonc` - the shared markdownlint-cli2 configuration.
+* `.markdownlint-cli2.jsonc` - the shared markdownlint-cli2 configuration.
 * `rules/*.cjs` - custom rule loader wrappers used by markdownlint-cli2.
 * `.markdownlintignore` - the shared ignore baseline.
 * `README.md` - package documentation.

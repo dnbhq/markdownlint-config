@@ -31,16 +31,16 @@
     "typescript": "6.0.3"
   },
   "scripts": {
-    "lint": "markdownlint-cli2 --config config.jsonc README.md",
+    "lint": "markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md",
     "lint:staged": "lint-staged",
     "prepare": "simple-git-hooks",
     "release": "release-it --ci",
     "release:dry": "release-it --dry-run",
     "test": "npm run lint"
   },
-  "main": "config.jsonc",
+  "main": ".markdownlint-cli2.jsonc",
   "files": [
-    "config.jsonc",
+    ".markdownlint-cli2.jsonc",
     "rules/*.cjs",
     ".markdownlintignore",
     "README.md",
@@ -55,15 +55,15 @@
     "node": ">=25"
   },
   "exports": {
-    ".": "./config.jsonc",
-    "./config": "./config.jsonc",
-    "./config.jsonc": "./config.jsonc",
+    ".": "./.markdownlint-cli2.jsonc",
+    "./config": "./.markdownlint-cli2.jsonc",
+    "./.markdownlint-cli2.jsonc": "./.markdownlint-cli2.jsonc",
     "./ignore": "./.markdownlintignore",
     "./.markdownlintignore": "./.markdownlintignore"
   },
   "lint-staged": {
     "*.{md,mdx}": [
-      "markdownlint-cli2 --config config.jsonc --fix --no-globs"
+      "markdownlint-cli2 --config .markdownlint-cli2.jsonc --fix --no-globs"
     ]
   },
   "simple-git-hooks": {
