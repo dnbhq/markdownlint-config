@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.6](https://github.com/dnbhq/markdownlint-config/compare/v0.2.5...v0.2.6) (2026-06-01)
+
+### Bug Fixes
+
+* add node_modules to ignore file ([7b52a8e](https://github.com/dnbhq/markdownlint-config/commit/7b52a8e104f769aa38934165fe03f60a1c3ea516))
+
+### Build
+
+* **deps:** update dependencies ([e7618a8](https://github.com/dnbhq/markdownlint-config/commit/e7618a877dec7175c217e3ac3706aefff3a2b1ad))
+
 ## [0.2.5](https://github.com/dnbhq/markdownlint-config/compare/v0.2.4...v0.2.5) (2026-06-01)
 
 ### Bug Fixes
