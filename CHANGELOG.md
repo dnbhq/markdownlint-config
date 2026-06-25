@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.8](https://github.com/dnbhq/markdownlint-config/compare/v0.2.7...v0.2.8) (2026-06-25)
+
+### Bug Fixes
+
+* remove markdownlint-rule-relative-links ([039e985](https://github.com/dnbhq/markdownlint-config/commit/039e985877f5e220c3d93654ddea8b1b6f899db6))
+
+### Build
+
+* **deps:** update dependencies ([42a0c61](https://github.com/dnbhq/markdownlint-config/commit/42a0c6104bca9bd2ae357c25ccad9384060c5d63))
+
 ## [0.2.7](https://github.com/dnbhq/markdownlint-config/compare/v0.2.6...v0.2.7) (2026-06-01)
 
 ### Bug Fixes
