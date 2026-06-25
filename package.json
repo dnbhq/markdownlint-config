@@ -12,8 +12,8 @@
   "bugs": "https://github.com/dnbhq/markdownlint-config/issues",
   "homepage": "https://github.com/dnbhq/markdownlint-config#readme",
   "dependencies": {
-    "@github/markdownlint-github": "0.8.0",
-    "markdownlint": "0.40.0",
+    "@github/markdownlint-github": "0.8.2",
+    "markdownlint": "0.41.0",
     "markdownlint-cli2": "0.22.1",
     "markdownlint-rule-extended-ascii": "0.2.1",
     "markdownlint-rule-relative-links": "5.1.0",
@@ -23,8 +23,8 @@
   "devDependencies": {
     "@dnbhq/tsconfig": "0.1.6",
     "@release-it/conventional-changelog": "11.0.1",
-    "@types/node": "25.9.1",
-    "lint-staged": "17.0.7",
+    "@types/node": "26.0.1",
+    "lint-staged": "17.0.8",
     "release-it": "20.2.0",
     "simple-git-hooks": "2.13.1",
     "typescript": "6.0.3"
