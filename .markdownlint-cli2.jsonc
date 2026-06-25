@@ -5,8 +5,7 @@
     "@github/markdownlint-github",
     "markdownlint-rule-relative-links",
     "markdownlint-rule-search-replace",
-    "markdownlint-rule-title-case-style",
-    "markdownlint-rule-list-duplicates"
+    "markdownlint-rule-title-case-style"
   ],
   "config": {
     // Rules

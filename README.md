@@ -6,6 +6,15 @@ Shared markdownlint-cli2 configuration for DNBHQ projects.
 * [Usage](#usage)
 * [Available files](#available-files)
 * [Rule overview](#rule-overview)
+  * [Baseline behaviour](#baseline-behaviour)
+  * [Heading rules](#heading-rules)
+  * [List rules](#list-rules)
+  * [Line length and prose rules](#line-length-and-prose-rules)
+  * [HTML and media rules](#html-and-media-rules)
+  * [Code and emphasis rules](#code-and-emphasis-rules)
+  * [Link and table rules](#link-and-table-rules)
+  * [Horizontal rule rules](#horizontal-rule-rules)
+  * [Search and typography rules](#search-and-typography-rules)
 * [Release](#release)
 * [Notes](#notes)
 
@@ -21,7 +30,6 @@ The package installs everything required to run markdownlint through markdownlin
 * `markdownlint`
 * `@github/markdownlint-github`
 * `markdownlint-rule-extended-ascii`
-* `markdownlint-rule-list-duplicates`
 * `markdownlint-rule-relative-links`
 * `markdownlint-rule-search-replace`
 * `markdownlint-rule-title-case-style`
@@ -83,7 +91,6 @@ The shared rule config enables markdownlint defaults with `default: true` and th
 * `MD004` requires `*` as the unordered list marker.
 * `MD005` keeps indentation consistent for list items at the same level.
 * `MD007` uses two spaces for nested list indentation.
-* `markdownlint-rule-list-duplicates` is loaded to detect duplicate list items.
 
 ### Line length and prose rules
 
