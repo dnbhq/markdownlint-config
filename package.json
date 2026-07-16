@@ -12,22 +12,22 @@
   "bugs": "https://github.com/dnbhq/markdownlint-config/issues",
   "homepage": "https://github.com/dnbhq/markdownlint-config#readme",
   "dependencies": {
-    "@github/markdownlint-github": "0.8.2",
-    "markdownlint": "0.41.0",
-    "markdownlint-cli2": "0.22.1",
+    "@github/markdownlint-github": "0.8.3",
+    "markdownlint": "0.41.1",
+    "markdownlint-cli2": "0.23.0",
     "markdownlint-rule-extended-ascii": "0.2.1",
-    "markdownlint-rule-relative-links": "5.1.0",
+    "markdownlint-rule-relative-links": "5.1.1",
     "markdownlint-rule-search-replace": "1.2.0",
     "markdownlint-rule-title-case-style": "0.4.3"
   },
   "devDependencies": {
     "@dnbhq/tsconfig": "0.1.6",
     "@release-it/conventional-changelog": "11.0.1",
-    "@types/node": "26.0.1",
+    "@types/node": "26.1.1",
     "lint-staged": "17.0.8",
-    "release-it": "20.2.0",
+    "release-it": "20.2.1",
     "simple-git-hooks": "2.13.1",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "scripts": {
     "lint": "markdownlint-cli2 --config .markdownlint-cli2.jsonc README.md",
