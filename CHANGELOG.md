@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.9](https://github.com/dnbhq/markdownlint-config/compare/v0.2.8...v0.2.9) (2026-07-16)
+
+### Build
+
+* **deps:** update dependencies ([81a3c6b](https://github.com/dnbhq/markdownlint-config/commit/81a3c6b1931160b58c0b5c4cad55766f06b034de))
+
 ## [0.2.8](https://github.com/dnbhq/markdownlint-config/compare/v0.2.7...v0.2.8) (2026-06-25)
 
 ### Bug Fixes
