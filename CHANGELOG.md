@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.2.11](https://github.com/dnbhq/markdownlint-config/compare/v0.2.10...v0.2.11) (2026-07-26)
+
+### Chores
+
+* sync package-lock.json engines field ([878e68e](https://github.com/dnbhq/markdownlint-config/commit/878e68e879c6495d746dce094941209665935ebe))
+
+### CI
+
+* require Node.js 26 in publish workflow ([53275c9](https://github.com/dnbhq/markdownlint-config/commit/53275c9b94de53f4a5e8f4a62a17c7d629991472))
+
 ## [0.2.10](https://github.com/dnbhq/markdownlint-config/compare/v0.2.9...v0.2.10) (2026-07-26)
 
 ### Bug Fixes
