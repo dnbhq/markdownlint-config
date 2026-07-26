@@ -14,7 +14,7 @@
   "dependencies": {
     "@github/markdownlint-github": "0.8.3",
     "markdownlint": "0.41.1",
-    "markdownlint-cli2": "0.23.0",
+    "markdownlint-cli2": "0.23.1",
     "markdownlint-rule-extended-ascii": "0.2.1",
     "markdownlint-rule-relative-links": "5.1.1",
     "markdownlint-rule-search-replace": "1.2.0",
@@ -46,6 +46,11 @@
     "CHANGELOG.md",
     "LICENSE"
   ],
+  "overrides": {
+    "markdownlint-cli2": {
+      "js-yaml": "4.3.0"
+    }
+  },
   "publishConfig": {
     "access": "public",
     "provenance": true
