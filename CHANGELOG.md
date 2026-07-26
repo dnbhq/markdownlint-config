@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.2.10](https://github.com/dnbhq/markdownlint-config/compare/v0.2.9...v0.2.10) (2026-07-26)
+
+### Bug Fixes
+
+* patch js-yaml prototype pollution/DoS advisories in markdownlint-cli2 ([1c65968](https://github.com/dnbhq/markdownlint-config/commit/1c65968f2a5bfcaca0d7a6deaa3d1da64bc9fae0))
+
 ## [0.2.9](https://github.com/dnbhq/markdownlint-config/compare/v0.2.8...v0.2.9) (2026-07-16)
 
 ### Build
